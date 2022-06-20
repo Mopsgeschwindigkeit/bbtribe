@@ -1,3 +1,8 @@
+:root {
+    --bbt-color-black: black;
+    --bbt-color-grey: rgb(67,67,68);
+}
+
 body::before {
   content: "";
   height: 100%;
@@ -8,6 +13,8 @@ body::before {
   background-position: center;
   position: fixed;
   opacity: 0.2;
+  background-size: 60%;
+
 }
 
 body {
@@ -17,7 +24,7 @@ body {
 }
 .navbar {
     border-radius: 10;
-    background-color: rgb(67,67,68);
+    background-color: var(--bbt-color-grey);
 }
 .nav-link,
 .navbar-brand {
@@ -55,15 +62,15 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.6);
 }
 
 .description {
 	left: 50%;
-	position: absolute;
+	position: relative;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+    width: 70%;
 }
 .description h1 {
 	color: #6ab446;
@@ -154,4 +161,28 @@ body {
 .footer-copyright {
     color: #666;
     padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0%;
+        padding: 0 15px;
+        position: relative;
+        top: 10%;
+        transform: none;
+        text-align: center;
+        margin: auto;
+    }
+ 
+    .description h1 {
+        font-size: 2em;
+    }
+ 
+    .description p {
+        font-size: 1.2rem;
+    }
+ 
+    .features {
+        margin: 0;
+    }
 }
