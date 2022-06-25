@@ -13,7 +13,8 @@
 
 #content {
     position: relative;
-    height: 1200px;
+    height: 90vh;
+    min-height: 1200px;
     padding-bottom:250px;   /* Height of the footer element */
 }
 
@@ -151,7 +152,7 @@ body {
     }
 
     #content{
-      padding: top 10px;
+      padding-top: 30px;
       height: auto
     }
 
