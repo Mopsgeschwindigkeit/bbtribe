@@ -1,7 +1,33 @@
 :root {
     --bbt-color-black: black;
-    --bbt-color-grey: rgb(67,67,68);
+    --bbt-color-grey: #222;
+    --bbt-color-hovergrey: #5a5757;
+    --bbt-color-white: white;
 }
+
+#wrapper {
+    margin: 0;
+    height: 100%;
+    position:relative;
+    }
+
+#content {
+    position: relative;
+    height: 1200px;
+    padding-bottom:250px;   /* Height of the footer element */
+}
+
+#footer {
+    height:305px;
+    position: relative;
+    bottom:0;
+    left:0;
+    color: #ccc;
+    padding: 45px 0 10px;
+    height: 250px;
+    margin: 0;
+    background-color: var(--bbt-color-grey);
+    }
 
 body::before {
   content: "";
@@ -12,9 +38,9 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
-  opacity: 0.2;
+  opacity: 0.075;
+  margin: 0;
   background-size: 60%;
-
 }
 
 body {
@@ -22,13 +48,16 @@ body {
     margin: 0;
     background-color: black;
 }
+
+.nav-bar.container{
+    margin: auto;
+}
 .navbar {
     border-radius: 10;
     background-color: var(--bbt-color-grey);
 }
 .nav-link,
 .navbar-brand {
-    color: #fff;
     cursor: pointer;
     padding-left: 10px;
 }
@@ -40,10 +69,10 @@ body {
     margin-right: 1em !important;
     font-style: normal;
     font-size: 30px;
-    color: black;
+    color: var(--bbt-color-white) !important;
 }
 .nav-link:hover {
-    color: #000;
+    color: var(--bbt-color-hovergrey) !important;
 }
 .navbar-collapse {
     justify-content: flex-end;
@@ -56,114 +85,80 @@ body {
   position: relative;
 }
 
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-}
-
 .description {
-	left: 50%;
 	position: relative;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	top: 20%;
 	text-align: center;
-    width: 70%;
+  width: 70%;
 }
 .description h1 {
-	color: #6ab446;
+	color: var(--bbt-color-white);
+  font-size: 5rem;
 }
-
 .description p {
 	color: #fff;
 	font-size: 1.3rem;
 	line-height: 1.5;
 }
-
 .description button {
     border:1px solid #6ab446;
     background:#6ab446;
     border-radius: 0;
     color:#fff;
 }
-
 .description button:hover {
 	border:1px solid #fff;
     background:#fff;
     color:#000;
 }
 
-.features {
-	margin: 4em auto;
-	padding: 1em;
-	position: relative;
-}
-
-.feature-title {
-	color: #333;
-	font-size: 1.3rem;
-	font-weight: 700;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-
-.features img {
-	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	margin-bottom: 16px;
-}
-
-.features .form-control,
-.features input {
-	border-radius: 10;
-}
-.features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
-    color: #fff;
-    margin-top: 20px;
-}
-.features .btn:hover {
-    background-color: #333;
-    border: 1px solid #333;
-}
-
-.background {
-	background: #aadec1;
-	padding: 4em 0;
-}
 .team {
 	color: #5e5e55;
 	padding: 0 180px;
+  position: relative;
+  top: 40%;
 }
+.team-header{
+  color: var(--bbt-color-white);
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 30px;
+  }
+
+
 .team .card-columns {
-	-webkit-column-count: 4;
-	-moz-column-count: 4;
-	column-count: 4;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
 }
 .team .card {
 	background:none;
 	border: none;
+  padding-left: 30px;
+
 }
 .team .card-title {
 	font-size: 1.3rem;
 	margin-bottom: 0;
 	text-transform: uppercase;
-}
-.page-footer {
-    background-color: #222;
-    color: #ccc;
-    padding: 60px 0 30px;
-}
-.footer-copyright {
-    color: #666;
-    padding: 40px 0;
+  color: var(--bbt-color-white);
 }
 
+
 @media (max-width: 575.98px) {
+    #footer{
+      height: 450px;
+    }
+
+    #content{
+      padding: top 10px;
+      height: auto
+    }
+
+    .team{
+      padding: 10px;
+    }
+
     .description {
         left: 0%;
         padding: 0 15px;
@@ -173,16 +168,19 @@ body {
         text-align: center;
         margin: auto;
     }
- 
+
     .description h1 {
         font-size: 2em;
     }
- 
+
     .description p {
         font-size: 1.2rem;
     }
- 
+
     .features {
         margin: 0;
     }
+
+
+
 }
