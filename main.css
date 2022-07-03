@@ -5,31 +5,13 @@
     --bbt-color-white: white;
 }
 
-#wrapper {
-    margin: 0;
-    height: 100%;
-    position:relative;
-    }
-
-#content {
-    position: relative;
-    height: 90vh;
-    min-height: 1200px;
-    padding-bottom:250px;   /* Height of the footer element */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
 }
 
-#footer {
-    height:305px;
-    position: relative;
-    bottom:0;
-    left:0;
-    color: #ccc;
-    padding: 45px 0 10px;
-    height: 250px;
-    margin: 0;
-    background-color: var(--bbt-color-grey);
-    }
-
+/* BarbelTribe Background Logo */
 body::before {
   content: "";
   height: 100%;
@@ -44,12 +26,30 @@ body::before {
   background-size: 60%;
 }
 
-body {
-    padding: 0;
+/* Basic Side Layout */
+#wrapper {
     margin: 0;
-    background-color: black;
+    height: 100%;
+    position:relative;
 }
 
+#content {
+    position: relative;
+}
+
+#footer {
+    height:305px;
+    position: relative;
+    bottom:0;
+    left:0;
+    color: #ccc;
+    padding: 45px 0 10px;
+    height: 250px;
+    margin: 0;
+    background-color: var(--bbt-color-grey);
+}
+
+/* navigation-bar */
 .nav-bar.container{
     margin: auto;
 }
@@ -86,11 +86,15 @@ body {
   position: relative;
 }
 
+/* start-page */
+.main-content{
+  height: 90vh;
+  min-height: 1300px;
+}
+
 .description {
-	position: relative;
-	top: 20%;
+	margin-top: 15%;
 	text-align: center;
-  width: 70%;
 }
 .description h1 {
 	color: var(--bbt-color-white);
@@ -116,16 +120,14 @@ body {
 .team {
 	color: #5e5e55;
 	padding: 0 180px;
-  position: relative;
-  top: 40%;
+  margin-top: 20%;
 }
 .team-header{
   color: var(--bbt-color-white);
   text-align: center;
   font-size: 2rem;
   padding-bottom: 30px;
-  }
-
+}
 
 .team .card-columns {
 	-webkit-column-count: 3;
@@ -145,7 +147,33 @@ body {
   color: var(--bbt-color-white);
 }
 
+/* News Page */
+.news-cards{
+  padding-top: 20px;
+  position: relative;
+  min-height: 100% !important;
+}
 
+.news-card{
+  background-color: var(--bbt-color-grey);
+  height: 500px;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 0;
+}
+
+.news-card .card-img-top{
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-card .card-body{
+  text-align: center;
+  color: white;
+}
+
+
+/* Screen Sizes */
 @media (max-width: 575.98px) {
     #footer{
       height: 450px;
@@ -181,7 +209,4 @@ body {
     .features {
         margin: 0;
     }
-
-
-
 }
