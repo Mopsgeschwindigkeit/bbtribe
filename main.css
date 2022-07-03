@@ -172,6 +172,25 @@ body::before {
   color: white;
 }
 
+/* Events Page */
+.events-table{
+  padding-top: 5%;
+  position: relative;
+  min-height: 100% !important;
+
+  height: 90vh;
+  min-height: 1300px;
+}
+
+.events-table .table{
+  background-color: var(--bbt-color-grey);
+  color: var(--bbt-color-white);
+  text-align: center;
+}
+
+.events-table thead{
+  background-color: var(--bbt-color-hovergrey);
+}
 
 /* Screen Sizes */
 @media (max-width: 575.98px) {
