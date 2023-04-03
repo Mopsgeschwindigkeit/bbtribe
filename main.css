@@ -38,7 +38,6 @@ body::before {
 }
 
 #footer {
-    height:305px;
     position: relative;
     bottom:0;
     left:0;
@@ -88,7 +87,7 @@ body::before {
 
 /* start-page */
 .main-content{
-  height: 90vh;
+  height: 80vh;
   min-height: 1300px;
 }
 
@@ -119,9 +118,14 @@ body::before {
 
 .team {
 	color: #5e5e55;
-	padding: 0 180px;
-  margin-top: 20%;
+	padding: 0 250px;
+  margin-top: 10%;
 }
+
+.sponsors {
+  margin-top: 10%;
+}
+
 .team-header{
   color: var(--bbt-color-white);
   text-align: center;
