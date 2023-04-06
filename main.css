@@ -43,9 +43,18 @@ body::before {
     left:0;
     color: #ccc;
     padding: 45px 0 10px;
-    height: 250px;
+    height: auto;
     margin: 0;
     background-color: var(--bbt-color-grey);
+}
+
+#footer .container {
+  width: 100vw;
+  max-width: 1700px;
+}
+
+#footer i{
+  color: white;
 }
 
 /* navigation-bar */
