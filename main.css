@@ -208,7 +208,11 @@ body::before {
 /* Screen Sizes */
 @media (max-width: 575.98px) {
     #footer{
-      height: 450px;
+      height: auto;
+    }
+
+    #footer img{
+      margin-bottom: 10px;
     }
 
     #content{
@@ -218,6 +222,11 @@ body::before {
 
     .team{
       padding: 10px;
+    }
+    
+    .sponsors .col{
+      padding-top: 10%;
+      padding-bottom: 10%;
     }
 
     .description {
