@@ -97,7 +97,7 @@ body::before {
 /* start-page */
 .main-content{
   height: 80vh;
-  min-height: 1300px;
+  min-height: 1450px;
 }
 
 .description {
@@ -127,13 +127,13 @@ body::before {
 
 .team {
 	color: #5e5e55;
-	padding: 0 250px;
   margin-top: 10%;
 }
 
 .sponsors {
   margin-top: 10%;
 }
+
 
 .team-header{
   color: var(--bbt-color-white);
@@ -142,17 +142,21 @@ body::before {
   padding-bottom: 30px;
 }
 
-.team .card-columns {
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
-}
 .team .card {
 	background:none;
 	border: none;
   padding-left: 30px;
-
 }
+
+.team .card img{
+  height: 80%;
+  width: 80%;
+}
+
+.team .card-img-top{
+  margin-left: 10%;
+}
+
 .team .card-title {
 	font-size: 1.3rem;
 	margin-bottom: 0;
@@ -176,7 +180,7 @@ body::before {
 }
 
 .news-card .card-img-top{
-  height: 200px;
+  align-items: center;
   object-fit: cover;
 }
 
@@ -205,6 +209,27 @@ body::before {
   background-color: var(--bbt-color-hovergrey);
 }
 
+@media (max-width: 992px){
+  .sponsors .col{
+    margin-bottom: 50px;
+  }
+  .main-content{
+    height: 80vh;
+    min-height: 1550px;
+  }
+
+  .team .card-body h4{
+    font-size: 1rem;
+  }
+} 
+
+@media (max-width: 767px){
+  .main-content{
+    height: 80vh;
+    min-height: 1750px;
+  }
+}
+
 /* Screen Sizes */
 @media (max-width: 575.98px) {
     #footer{
@@ -223,11 +248,7 @@ body::before {
     .team{
       padding: 10px;
     }
-    
-    .sponsors .col{
-      padding-top: 10%;
-      padding-bottom: 10%;
-    }
+  
 
     .description {
         left: 0%;
@@ -245,6 +266,10 @@ body::before {
 
     .description p {
         font-size: 1.2rem;
+    }
+
+    .team .card-body h4{
+      font-size: 0.8rem;
     }
 
     .features {
