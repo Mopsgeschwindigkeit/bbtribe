@@ -193,10 +193,9 @@ body::before {
 .events-table{
   padding-top: 5%;
   position: relative;
-  min-height: 100% !important;
 
-  height: 90vh;
-  min-height: 1300px;
+  height: 80vh;
+  min-height: 1200px;
 }
 
 .events-table .table{
@@ -221,6 +220,8 @@ body::before {
   .team .card-body h4{
     font-size: 1rem;
   }
+
+
 } 
 
 @media (max-width: 767px){
@@ -228,6 +229,13 @@ body::before {
     height: 80vh;
     min-height: 1750px;
   }
+
+
+  .events-table{
+
+    min-height: 1400px;
+  }
+
 }
 
 /* Screen Sizes */
@@ -244,6 +252,12 @@ body::before {
       padding-top: 30px;
       height: auto
     }
+
+
+  .events-table{
+
+    min-height: 1600px;
+  }
 
     .team{
       padding: 10px;
