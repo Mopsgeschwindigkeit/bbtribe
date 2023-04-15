@@ -54,7 +54,11 @@ body::before {
 }
 
 #footer i{
-  color: white;
+  color: var(--bbt-color-white);
+}
+
+#footer a{
+  color: var(--bbt-color-white);
 }
 
 /* navigation-bar */
@@ -132,6 +136,33 @@ body::before {
 
 .sponsors {
   margin-top: 10%;
+}
+
+.impressum.main-content {
+  margin-top: 2%;
+  text-align: left;
+  color: var(--bbt-color-white);
+  min-height: 2000px;
+}
+
+.impressum h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.impressum h2 {
+  margin-top: 35px;
+  font-size: 2rem;
+}
+
+.impressum h3 {
+  font-size: 3rem;
+}
+
+.impressum p {
+  font-size: 1.1rem;
 }
 
 
@@ -217,6 +248,11 @@ body::before {
     min-height: 1550px;
   }
 
+  .impressum.main-content {
+    min-height: 2200px;
+  }
+
+
   .team .card-body h4{
     font-size: 1rem;
   }
@@ -230,6 +266,9 @@ body::before {
     min-height: 1750px;
   }
 
+  .impressum.main-content {
+    min-height: 2600px;
+  }
 
   .events-table{
 
