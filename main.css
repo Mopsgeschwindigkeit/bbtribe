@@ -341,7 +341,7 @@ body::before {
 }
 
   .team .card-img-top{
-    margin-left: 30%;
+    margin-left: calc(100% - 100px);
   }
 
     .description {
