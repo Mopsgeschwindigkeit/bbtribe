@@ -1,6 +1,7 @@
 :root {
     --bbt-color-black: black;
-    --bbt-color-grey: #222;
+    /*--bbt-color-grey: #222;-->*/
+    --bbt-color-grey: #3d3d3d;
     --bbt-color-hovergrey: #5a5757;
     --bbt-color-white: white;
 }
@@ -21,7 +22,7 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
-  opacity: 0.075;
+  opacity: 0.175;
   margin: 0;
   background-size: 60%;
 }
