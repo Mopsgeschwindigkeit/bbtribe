@@ -205,7 +205,8 @@ body::before {
 
 .news-card{
   background-color: var(--bbt-color-grey);
-  height: 500px;
+  min-height: 500px;
+  height: auto;
   margin-bottom: 20px;
   padding: 0;
   border: 0;
