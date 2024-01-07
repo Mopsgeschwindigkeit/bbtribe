@@ -226,9 +226,7 @@ body::before {
 .events-table{
   padding-top: 5%;
   position: relative;
-
-  height: 80vh;
-  min-height: 1200px;
+  margin-bottom: 5%;
 }
 
 .events-table .table{
