@@ -1,10 +1,6 @@
 #Sport;Wettkampf;Datum;Ort;Stream-Website;Stream-URL
 
-Gewichtheben;Europameisterschaft;12.02.-20.02.2024;Sofia, Bulgarien; TBD
-Nationalliga Gewichtheben;SK Vöest Linz 2 vs. WGK BT-Bruck 2;09.03.2024;SK Voest Sporthalle Auwiesen <br/> Auwiesenstraße 200 4030 Linz;TBD
-Bundesliga Gewichtheben;KSK Brunn am Gebirge vs. WGK BT-Bruck 1;16.03.2024;Josef Hofgasse 4, 2345 Brunn am Gebirge;TBD
-Kraftdreikampf;Steirische Landesmeisterschaft;23.03-24.03.2024;Mühlweg 30, 8073 Feldkirchen bei Graz;TBD
-Bundesliga Gewichtheben; WGK BT-Bruck 1 vs. SK Vöest Linz 1;13.04.2024;Schillerstraße 11, 8600 Bruck an der Mur;TBD
+Bundesliga Gewichtheben; WGK BT-Bruck 1 vs. SK Vöest Linz 1;13.04.2024;Schillerstraße 11, 8600 Bruck an der Mur; Youtube; https://www.youtube.com/watch?v=0gzeTYN3K0U
 Nationalliga Gewichtheben; WGK BT-Bruck 2 vs. AKH Vössendorf 2;20.04.2024;Löwenherz Fitness Company <br/> Puntigamer Straße 88, 8042 Graz;TBD
 Gewichtheben;Österreichische Meisterschaft Masters;27.04.2024;ASKÖ Landesverband Salzburg <br/>Parscher Str. 4, 5023 Salzburg; TBD
 Bundesliga Gewichtheben;WKG AK Öblarn/AV Graz 1 vs. WGK BT-Bruck 2;04.05.2024;Öblarner Haus für alle <br/> Öblarn 99, 8960 Öblarn;TBD
